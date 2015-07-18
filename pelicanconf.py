@@ -19,15 +19,29 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+MARKUP = ('md')
+
+PLUGIN_PATHS = ['/usr/local/anaconda/lib/python2.7/site-packages/pelican/pelican-plugins']
+PLUGINS = ['liquid_tags.img', 'liquid_tags.video',
+           'liquid_tags.youtube', 'liquid_tags.vimeo',
+           'liquid_tags.include_code', 'liquid_tags.notebook']
+
+EXTRA_HEADER = open('_nb_header.html').read().decode('utf-8')
+
+
+# Theme configuration
+THEME = "pelican-bootstrap3"
+BOOTSTRAP_THEME = 'yeti'
+BOOTSTRAP_NAVBAR_INVERSE = True
+BANNER='images/banner.png'
+
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('twitter', 'http://twitter.com/guillempalou'),
+          ('linkedin', 'http://www.linkedin.com/in/guillempalou'),
+          ('github', 'http://github.com/dsvision'),
+          ('github', 'http://github.com/guillempalou'))
 
 DEFAULT_PAGINATION = 10
 
