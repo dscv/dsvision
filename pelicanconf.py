@@ -8,6 +8,12 @@ SITEURL = ''
 
 PATH = 'content'
 
+# open the about_me file and read it
+with open('additional_content/about_me.html') as f:
+    about_me = f.read()
+
+ABOUT_ME = about_me
+
 TIMEZONE = 'Europe/London'
 
 DEFAULT_LANG = u'en'
@@ -34,6 +40,8 @@ THEME = "pelican-bootstrap3"
 BOOTSTRAP_THEME = 'yeti'
 BOOTSTRAP_NAVBAR_INVERSE = True
 BANNER='images/banner.png'
+
+DISPLAY_TAGS_ON_SIDEBAR=False
 
 # Blogroll
 

@@ -1,6 +1,6 @@
 title: An approach to Non-Local-Mean denoising
 Date: 2015-07-07
-Category: vision, image processing
+Category: Computer Vision
 Tags: denoising, non local means, ball tree, pca
 Slug: 
 Author: Guillem Palou
